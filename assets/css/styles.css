@@ -1,0 +1,123 @@
+/* Reset en link normalize_PRO.css */
+/* IMPORTANTE */
+/* En este desafío utilizo float+clearfix, display:inline-block y, además, Flexbox */
+/* Coloqué dos media screen según sugerencia en desafío anterior,
+    pero página no está optimizada para móviles.*/
+
+/* Características comunes del body */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 3.2rem;
+    padding: 30px 0;
+}
+
+h2 {
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+}
+
+/* Imagen principal al inicio */
+.img-header {
+    width: 100%;
+}
+
+/* Descripción e imagen: uso de float y clearfix */
+.desc-section {
+    display: flow-root;
+}
+
+.desc-parrafos, 
+.img-parrafo 
+{
+    float: left;
+}
+
+.desc-parrafos {
+    width: 40%;
+    padding: 20px;
+    text-align: left;
+    margin: 50px 0 0 120px;
+}
+
+.img-parrafo {
+    width: 60%;
+    max-width: 500px;
+    padding: 50px ;
+    margin: 0 70px 0 70px;
+}
+
+/* Sección de características con íconos inline-block*/
+.features-container {
+    text-align: center;
+    padding: 100px 200px;
+    background-color: #1E1A13;
+    overflow: hidden;
+}
+
+.features-container .feature i {
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    width: 33%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.features-container .feature .p-icons {
+    font-size: 1.5rem;
+}
+
+
+/* Galería de tres imágenes con flexbox */
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px;
+    justify-content: space-evenly;
+}
+
+.img-container img {
+    max-width: 30%;
+}
+
+
+/* Footer */
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    height: 6em;
+    line-height: 6em;
+    background-color: #1E1A13;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* Media Screen */
+@media screen and (min-width: 1590px) {
+    .img-parrafo {
+        margin-left: 200px;
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 1206px) {
+    .feature {
+        width: 50%;
+    }
+}
+
